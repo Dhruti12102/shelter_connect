@@ -1,0 +1,11 @@
+/* .d-flex {
+    width: 1423px;
+} */
+
+.bg-gradient {
+    background: linear-gradient(to right, #93c5fd, #bfdbfe);
+}
+
+.card {
+    width: 800px;
+}

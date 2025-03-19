@@ -1,0 +1,219 @@
+/* STable.css - Comprehensive styling for Property component */
+
+/* Main container styling */
+.property-page {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Table wrapper styling */
+.table-wrapper {
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Table title styling */
+.table-title {
+    padding-bottom: 15px;
+    background: #f8f9fa;
+    margin: -20px -25px 15px;
+    padding: 15px 25px;
+    border-radius: 8px 8px 0 0;
+}
+
+.table-title h2 {
+    margin: 5px 0 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.table-title b {
+    font-weight: 600;
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table thead th {
+    padding: 12px 15px;
+    border-bottom: 2px solid #dee2e6;
+    vertical-align: middle;
+    font-weight: 600;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.table tbody td {
+    padding: 12px 15px;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Search box styling */
+#searchbtn {
+    margin-bottom: 20px;
+}
+
+#searchbtn .form-label {
+    font-weight: 500;
+    color: #333;
+}
+
+#searchbtn .form-control {
+    border-radius: 4px;
+    padding: 10px 15px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#searchbtn .form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Button styling */
+.btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+}
+
+/* Loading spinner */
+.spinner-border {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: text-bottom;
+    border: 0.25em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spinner-border 0.75s linear infinite;
+}
+
+@keyframes spinner-border {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Alert styling */
+.alert {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+/* Table responsiveness */
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Empty state styling */
+.text-center {
+    text-align: center !important;
+}
+
+.my-3 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+/* Utility Classes */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Modal styling (basics - assumes Bootstrap is being used) */
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.modal-header {
+    border-bottom: 1px solid #dee2e6;
+    padding: 1rem;
+}
+
+.modal-footer {
+    border-top: 1px solid #dee2e6;
+    padding: 1rem;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .table-wrapper {
+        padding: 15px;
+    }
+
+    .table-title {
+        padding: 10px 15px;
+        margin: -15px -15px 10px;
+    }
+
+    .table thead th,
+    .table tbody td {
+        padding: 8px 10px;
+    }
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .table-wrapper {
+        padding: 10px;
+    }
+
+    .table-title h2 {
+        font-size: 1.2rem;
+    }
+
+    #searchbtn .form-control {
+        padding: 8px 12px;
+    }
+}

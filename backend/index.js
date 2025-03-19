@@ -9,8 +9,8 @@ dotenv.config();
 import connectDB from '../backend/utils/db.js';
 connectDB(); // Ensure this is called to establish the connection
 app.use(express.json());
-app.use(cors({ origin: "*" }));
-app.use(bodyParser.urlencoded({extended:true}));
+app.use(cors());
+app.use(bodyParser.urlencoded({ extended: true }));
 const Port = process.env.PORT || 3000;
 app.use("/api/auth", router);
 // Start the server

@@ -19,6 +19,13 @@ const userSchema = new Schema({
     isAdmin: {
         type: Boolean,
         default: false,
+
+    },
+    role: {
+        type: String,
+        enum: ["admin", "staff", "ma"],
+        default: "agent",
+        required: true,
     },
 });
 const User = new model("User", userSchema);

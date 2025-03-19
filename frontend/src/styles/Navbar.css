@@ -1,0 +1,23 @@
+/* .navbar {
+  position: fixed;
+  top: 0;
+  left: 250px;
+  width: calc(100% - 250px);
+  height: 60px;
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+  
+} */
+
+/* img {
+  width: 106px;
+  height: 60px;
+  margin-left: -32px;
+} */
+.flex {
+  margin-left: 1309px;
+  margin-top: -168px;
+}
